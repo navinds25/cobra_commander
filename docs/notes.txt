@@ -1,0 +1,11 @@
+Restricting S3 Access:
+
+polices:
+  ip polices:
+   - ip addresses of data-tier, app tier
+  tag policies:
+   - restrict on environment
+   - restrict on tier
+   - tag for phi/non-phi
+  aws config policies:
+   - prevent untagged buckets

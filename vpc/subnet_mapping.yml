@@ -1,0 +1,23 @@
+subnet_mapping:
+  environments:
+    prod: 1
+    uat: 2
+    dev: 3
+    dr: 4
+    ss: 5 #shared_services
+  service_name_for_subnets:
+    dmz:
+      websrvs: 1
+      nat: 5
+      sftp: 8
+    app:
+      eks: 2
+      bastions: 4
+      ec2Other: 6
+      lambda: 7
+    data:
+      cassandra: 3
+      rds: 9
+  number_of_azs: 2
+ 
+#tags
